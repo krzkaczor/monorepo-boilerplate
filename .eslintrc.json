@@ -183,20 +183,6 @@
         "exceptAfterSingleLine": true
       }
     ],
-    "max-len": [
-      "error",
-      {
-        "code": 120,
-        "ignoreStrings": true
-      }
-    ],
-    "new-cap": [
-      "error",
-      {
-        "capIsNew": false,
-        "newIsCap": true
-      }
-    ],
     "new-parens": "error",
     "no-array-constructor": "error",
     "no-async-promise-executor": "error",
