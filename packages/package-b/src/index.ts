@@ -1,4 +1,4 @@
-import { something } from 'package-a';
+import { something } from 'package-a'
 
-console.log('Hello package-b!');
-console.log(`something = ${something}`);
+console.log('Hello package-b!')
+console.log(`something = ${something}`)

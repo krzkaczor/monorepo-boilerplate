@@ -1,3 +1,3 @@
-console.log('Hello package-a!');
+console.log('Hello package-a!')
 
-export const something = 5;
+export const something = 5

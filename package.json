@@ -6,6 +6,7 @@
     "yarn": ">=1.15.2"
   },
   "scripts": {
+    "postinstall": "yarn build",
     "format": "wsrun -c format",
     "format:fix": "wsrun -c format:fix",
     "lint": "wsrun -c lint",
