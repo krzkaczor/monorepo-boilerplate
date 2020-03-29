@@ -1,6 +1,7 @@
 # Monorepo Boilerplate
 
-* TypeScript
-* Eslint
+* TypeScript with project references
+* Eslint with TypeSTRICT
 * Prettier
-* Mocha
+* Mocha with Chai and basic helpers
+* ts-essentials

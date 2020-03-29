@@ -6,7 +6,8 @@
     "moduleResolution": "node",
     "strict": true,
     "target": "ES2018",
-    "composite": true
+    "composite": true,
+    "incremental": true
   },
   "files": [],
   "references": [

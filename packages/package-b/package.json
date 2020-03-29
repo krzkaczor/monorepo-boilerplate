@@ -17,7 +17,7 @@
     "format:fix": "prettier --config ../../.prettierrc --write \"./**/*.ts\"",
     "lint": "eslint --ext .ts src test",
     "lint:fix": "yarn lint --fix",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit --incremental false --composite false",
     "prebuild": "rm -rf dist",
     "clean": "rm -rf dist && rm -f tsconfig.build.tsbuildinfo",
     "build": "./build.sh",
@@ -25,7 +25,8 @@
     "test:fix": "yarn lint:fix && yarn format:fix && yarn test && yarn typecheck"
   },
   "dependencies": {
-    "package-a": "^0.1.0"
+    "package-a": "^0.1.0",
+    "ts-essentials": "^6.0.3"
   },
   "devDependencies": {
     "@types/chai": "^4.2.7",
@@ -52,6 +53,6 @@
     "sinon": "^8.0.1",
     "sinon-chai": "^3.3.0",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.4"
+    "typescript": "^3.8.3"
   }
 }
