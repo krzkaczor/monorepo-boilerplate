@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "**/dist",
     "README.md",
@@ -21,7 +21,7 @@
     "prebuild": "rm -rf dist",
     "clean": "rm -rf dist && rm -f tsconfig.build.tsbuildinfo",
     "build": "./build.sh",
-    "test": "mocha",
+    "test": "mocha --config ../../.mocharc.js",
     "test:fix": "yarn lint:fix && yarn format:fix && yarn test && yarn typecheck"
   },
   "dependencies": {

@@ -15,7 +15,7 @@
     "prebuild": "rm -rf dist",
     "build": "./build.sh",
     "clean": "rm -rf dist && rm -f tsconfig.build.tsbuildinfo",
-    "test": "mocha",
+    "test": "mocha --config ../../.mocharc.js",
     "test:fix": "yarn lint:fix && yarn format:fix && yarn test && yarn typecheck"
   },
   "dependencies": {
