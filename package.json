@@ -13,6 +13,7 @@
     "lint:fix": "wsrun -c lint:fix",
     "typecheck": "wsrun -c typecheck",
     "build": "tsc --build --verbose",
+    "postbuild": "wsrun --exclude-missing -c post-build",
     "watch": "yarn build --watch",
     "clean": "wsrun -c clean",
     "test": "wsrun -c test",

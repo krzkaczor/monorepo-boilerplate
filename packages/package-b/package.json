@@ -13,14 +13,12 @@
   "scripts": {
     "prepublishOnly": "yarn lint && yarn test && yarn build",
     "start": "ts-node -T ./src/index.ts",
-    "format": "prettier --config ../../.prettierrc --check \"./**/*.ts\"",
-    "format:fix": "prettier --config ../../.prettierrc --write \"./**/*.ts\"",
+    "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --check \"./**/*.ts\"",
+    "format:fix": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.ts\"",
     "lint": "eslint --ext .ts src test",
     "lint:fix": "yarn lint --fix",
     "typecheck": "tsc --noEmit --incremental false --composite false",
-    "prebuild": "rm -rf dist",
     "clean": "rm -rf dist && rm -f tsconfig.build.tsbuildinfo",
-    "build": "./build.sh",
     "test": "mocha --config ../../.mocharc.js",
     "test:fix": "yarn lint:fix && yarn format:fix && yarn test && yarn typecheck"
   },
