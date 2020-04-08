@@ -58,7 +58,6 @@
       "error",
       "functions"
     ],
-    "no-fallthrough": "error",
     "no-floating-decimal": "error",
     "no-func-assign": "error",
     "no-global-assign": "error",
@@ -79,40 +78,7 @@
     ],
     "no-lone-blocks": "error",
     "no-misleading-character-class": "error",
-    "no-mixed-operators": [
-      "error",
-      {
-        "allowSamePrecedence": true,
-        "groups": [
-          [
-            "==",
-            "!=",
-            "===",
-            "!==",
-            ">",
-            ">=",
-            "<",
-            "<="
-          ],
-          [
-            "&&",
-            "||"
-          ],
-          [
-            "in",
-            "instanceof"
-          ]
-        ]
-      }
-    ],
     "no-multi-str": "error",
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        "max": 1,
-        "maxEOF": 0
-      }
-    ],
     "no-negated-in-lhs": "error",
     "no-new": "error",
     "no-new-func": "error",
@@ -125,7 +91,6 @@
     "no-octal-escape": "error",
     "no-path-concat": "error",
     "no-proto": "error",
-    "no-prototype-builtins": "error",
     "no-redeclare": [
       "error",
       {
@@ -174,38 +139,10 @@
     "no-useless-rename": "error",
     "no-useless-return": "error",
     "no-with": "error",
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
-    "object-property-newline": [
-      "error",
-      {
-        "allowMultiplePropertiesPerLine": true
-      }
-    ],
     "one-var": [
       "error",
       {
         "initialized": "never"
-      }
-    ],
-    "operator-linebreak": [
-      "error",
-      "after",
-      {
-        "overrides": {
-          ":": "before",
-          "?": "before"
-        }
-      }
-    ],
-    "padded-blocks": [
-      "error",
-      {
-        "blocks": "never",
-        "classes": "never",
-        "switches": "never"
       }
     ],
     "prefer-const": [
@@ -216,22 +153,11 @@
     ],
     "prefer-promise-reject-errors": "error",
     "symbol-description": "error",
-    "unicode-bom": [
-      "error",
-      "never"
-    ],
     "use-isnan": "error",
     "valid-typeof": [
       "error",
       {
         "requireStringLiterals": true
-      }
-    ],
-    "wrap-iife": [
-      "error",
-      "any",
-      {
-        "functionPrototypeMethods": true
       }
     ],
     "yoda": [
