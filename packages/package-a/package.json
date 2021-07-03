@@ -18,8 +18,5 @@
   },
   "dependencies": {
     "ts-essentials": "^6.0.3"
-  },
-  "devDependencies": {
-    "@types/node": "11"
   }
 }

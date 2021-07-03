@@ -25,8 +25,5 @@
   "dependencies": {
     "package-a": "^0.1.0",
     "ts-essentials": "^6.0.3"
-  },
-  "devDependencies": {
-    "@types/node": "11"
   }
 }

@@ -6,10 +6,12 @@
     "moduleResolution": "node",
     "strict": true,
     "target": "ES2018",
-    "sourceMap": true,
     "composite": true,
     "incremental": true
   },
-  "include": ["packages/**/*.ts"],
-  "exclude": ["**/node_modules"]
+  "files": [],
+  "references": [
+    { "path": "./packages/package-a/tsconfig.build.json" },
+    { "path": "./packages/package-b/tsconfig.build.json" }
+  ]
 }

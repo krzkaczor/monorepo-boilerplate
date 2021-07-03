@@ -10,10 +10,11 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    //: "this gets inlined into a package eslint, so it means: use current package's package.info or the one at the project root"
+    // this gets inlined into a package eslint, so it means: use current package's package.info or the one at the project root
     'import/no-extraneous-dependencies': ['error', { packageDir: ['./', '../../'] }],
     'unused-imports/no-unused-imports-ts': 'error',
-    'simple-import-sort/sort': 'error',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
     'accessor-pairs': 'error',
