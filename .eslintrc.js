@@ -113,14 +113,7 @@ module.exports = {
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
     'no-restricted-imports': ['error'],
-    'no-use-before-define': [
-      'error',
-      {
-        classes: false,
-        functions: false,
-        variables: false,
-      },
-    ],
+    'no-use-before-define': ['off'],
     'no-useless-call': 'error',
     'no-useless-catch': 'error',
     'no-useless-computed-key': 'error',
@@ -152,12 +145,4 @@ module.exports = {
     yoda: ['error', 'never'],
     'no-only-tests/no-only-tests': 'error',
   },
-  overrides: [
-    {
-      files: ['test/**/*.{js,ts,tsx}'],
-      rules: {
-        '@typescript-eslint/no-non-null-assertion': 'off',
-      },
-    },
-  ],
 }
