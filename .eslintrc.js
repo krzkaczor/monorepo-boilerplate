@@ -101,7 +101,6 @@ module.exports = {
     'no-tabs': 'error',
     'no-this-before-super': 'error',
     'no-throw-literal': 'error',
-    'no-unexpected-multiline': 'error',
     'no-unmodified-loop-condition': 'error',
     'no-unneeded-ternary': [
       'error',
