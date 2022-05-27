@@ -7,27 +7,28 @@
     "pnpm": ">=7.0.0"
   },
   "scripts": {
-    "format": "wsrun -c format",
-    "format:fix": "wsrun -c format:fix",
-    "lint": "wsrun -c lint",
-    "lint:fix": "wsrun -c lint:fix",
-    "typecheck": "wsrun -c typecheck",
-    "build": "tsc --build ./tsconfig.prod.json",
-    "postbuild": "wsrun --exclude-missing -c post-build",
-    "watch": "yarn build --watch",
-    "clean": "wsrun -c clean",
-    "test": "wsrun -c test",
-    "test:fix": "yarn lint:fix && yarn format:fix && yarn test && yarn typecheck"
+    "format": "prettier --check \"./**/*.ts\" README.md",
+    "format:fix": "prettier --write \"./**/*.ts\" README.md",
+    "lint": "pnpm run --parallel --aggregate-output --reporter append-only --filter './packages/**' lint",
+    "lint:fix": "pnpm --parallel --aggregate-output --reporter append-only --filter './packages/**' lint:fix",
+    "typecheck": "pnpm --parallel --aggregate-output --reporter append-only --filter './packages/**' typecheck",
+    "build": "tsc --build --verbose ./tsconfig.prod.json",
+    "postbuild": "pnpm run --parallel --filter './packages/**' post-build",
+    "watch": "tsc --build --verbose --watch ./tsconfig.prod.json",
+    "clean": "pnpm --filter './packages/**' clean",
+    "test": "pnpm run --parallel --aggregate-output --reporter append-only --filter './packages/**' test",
+    "fix": "pnpm lint:fix && pnpm format:fix && pnpm test && pnpm typecheck"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^17.0.35",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "earljs": "^0.2.3",
+    "esbuild": "^0.14.41",
+    "esbuild-register": "^3.3.2",
     "eslint": "^8.16.0",
-    "eslint-config-typestrict": "^1.0.3",
+    "eslint-config-typestrict": "^1.0.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-no-only-tests": "^2.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
