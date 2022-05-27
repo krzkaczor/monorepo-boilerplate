@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "lib": ["ES2018"],
-    "module": "CommonJS",
+    "lib": ["ES2021"],
+    "module": "commonjs",
+    "target": "ES2021",
     "moduleResolution": "node",
     "strict": true,
-    "target": "ES2018",
     "sourceMap": true,
     "composite": true,
     "incremental": true
