@@ -10,7 +10,7 @@ if (existsSync(testTsconfigPath)) {
 }
 
 // when not in watch mode, exit test runner on unhandled rejections
-if (!argv.includes('--watch')) {
+if (!require('process').argv.includes('--watch')) {
   process.on('unhandledRejection', (reason, promise) => {
     console.error('Unhandled Rejection during test execution:', promise, 'reason:', reason)
     process.exit(1)
