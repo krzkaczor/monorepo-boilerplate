@@ -9,11 +9,13 @@ if (existsSync(testTsconfigPath)) {
   process.env.TS_NODE_PROJECT = testTsconfigPath
 }
 
-// exit test runner on unhandled rejections
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('Unhandled Rejection during test execution:', promise, 'reason:', reason)
-  process.exit(1)
-})
+// when not in watch mode, exit test runner on unhandled rejections
+if (!argv.includes('--watch')) {
+  process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection during test execution:', promise, 'reason:', reason)
+    process.exit(1)
+  })
+}
 
 module.exports = {
   require: ['esbuild-register', 'earljs/mocha'],
