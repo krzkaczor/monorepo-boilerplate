@@ -21,5 +21,5 @@ module.exports = {
   require: ['esbuild-register', 'earljs/mocha'],
   extension: ['ts'],
   watchExtensions: ['ts'],
-  spec: ['test/**/*.test.ts'],
+  spec: ['src/**/*.test.ts'],
 }

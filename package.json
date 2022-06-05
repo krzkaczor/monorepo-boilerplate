@@ -7,8 +7,8 @@
     "pnpm": ">=7.0.0"
   },
   "scripts": {
-    "format": "prettier --check \"./**/*.ts\" README.md",
-    "format:fix": "prettier --write \"./**/*.ts\" README.md",
+    "format": "prettier --check \"./**/*.{ts,js}\" README.md",
+    "format:fix": "prettier --write \"./**/*.{ts,js}\" README.md",
     "lint": "pnpm run --parallel --aggregate-output --reporter append-only --filter './packages/**' lint",
     "lint:fix": "pnpm --parallel --aggregate-output --reporter append-only --filter './packages/**' lint:fix",
     "typecheck": "pnpm --parallel --aggregate-output --reporter append-only --filter './packages/**' typecheck",
@@ -28,7 +28,7 @@
     "esbuild": "^0.14.41",
     "esbuild-register": "^3.3.2",
     "eslint": "^8.16.0",
-    "eslint-config-typestrict": "^1.0.4",
+    "eslint-config-typestrict": "^1.0.5",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-no-only-tests": "^2.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",

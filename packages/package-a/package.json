@@ -9,7 +9,7 @@
     "start": "esbuild-register ./src",
     "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --check \"./**/*.ts\"",
     "format:fix": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.ts\"",
-    "lint": "eslint --ext .ts src test",
+    "lint": "eslint --ext .ts src",
     "lint:fix": "pnpm lint --fix",
     "typecheck": "tsc --noEmit --incremental false --composite false",
     "clean": "rm -rf dist && rm -f tsconfig.build.tsbuildinfo",

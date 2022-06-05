@@ -1,9 +1,9 @@
 import { expect } from 'earljs'
 
-import { something } from '../src'
+import { add } from './add'
 
 describe('test', () => {
   it('works', () => {
-    expect(something).not.toEqual(1)
+    expect(add(2, 2)).toEqual(4)
   })
 })

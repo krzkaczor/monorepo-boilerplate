@@ -12,7 +12,7 @@ importers:
       esbuild: ^0.14.41
       esbuild-register: ^3.3.2
       eslint: ^8.16.0
-      eslint-config-typestrict: ^1.0.4
+      eslint-config-typestrict: ^1.0.5
       eslint-plugin-import: ^2.26.0
       eslint-plugin-no-only-tests: ^2.6.0
       eslint-plugin-simple-import-sort: ^7.0.0
@@ -30,7 +30,7 @@ importers:
       esbuild: 0.14.41
       esbuild-register: 3.3.2_esbuild@0.14.41
       eslint: 8.16.0
-      eslint-config-typestrict: 1.0.4_yxpug7etb2lgoepw7cthu5drhq
+      eslint-config-typestrict: 1.0.5_yxpug7etb2lgoepw7cthu5drhq
       eslint-plugin-import: 2.26.0_grfei5yostfimvqdpf73rlhy3e
       eslint-plugin-no-only-tests: 2.6.0
       eslint-plugin-simple-import-sort: 7.0.0_eslint@8.16.0
@@ -1128,8 +1128,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-typestrict/1.0.4_yxpug7etb2lgoepw7cthu5drhq:
-    resolution: {integrity: sha512-NP+0wvy+HvXuHDjuqo4eFdNPvYRY6Nr9ZPDX3nqoPEGEpCgPHbhqFY8zE1Ko5t/FaUINtcUifYlODn5n2Ajlrg==}
+  /eslint-config-typestrict/1.0.5_yxpug7etb2lgoepw7cthu5drhq:
+    resolution: {integrity: sha512-6W48TD8kXMpj9lUTBoDWFKI+qRpgPQPKy9NPIf2cP56HiT6RBO9g7uvApvvl0DtfmAKP1kXbbI+Mg6xVROrXZA==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5
       eslint-plugin-sonarjs: '*'
