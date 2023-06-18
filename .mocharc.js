@@ -18,7 +18,7 @@ if (!require('process').argv.includes('--watch')) {
 }
 
 module.exports = {
-  require: ['esbuild-register', 'earljs/mocha'],
+  require: ['esbuild-register'],
   extension: ['ts'],
   watchExtensions: ['ts'],
   spec: ['src/**/*.test.ts'],

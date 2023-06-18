@@ -3,4 +3,4 @@
 - TypeScript with project references
 - Eslint with TypeSTRICT
 - Prettier
-- Mocha with earljs
+- Mocha with earl

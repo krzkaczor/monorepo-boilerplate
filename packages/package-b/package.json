@@ -11,7 +11,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "start": "esbuild-register ./src",
+    "start": "node -r esbuild-register ./src",
     "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --check \"./**/*.ts\"",
     "format:fix": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.ts\"",
     "lint": "eslint --ext .ts src",
